@@ -1,0 +1,81 @@
+/* ------------------------------ shared style ------------------------------ */
+.font-mulish {
+	font-family: "Mulish", sans-serif;
+}
+
+.max-width {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.primary-color {
+	color: #ff5400;
+}
+
+/* --------------------------------- navbar --------------------------------- */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-left-side {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+nav img {
+	width: 48px;
+}
+
+.nav-title {
+	color: #131318;
+	font-size: 36px;
+	font-weight: 800;
+}
+
+.nav-link {
+	display: flex;
+	gap: 44px;
+}
+
+nav li {
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+	color: #424247;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.nav-hamburger {
+	display: none;
+}
+
+/* ----------------------------- mobile display ----------------------------- */
+@media screen and (max-width: 600px) {
+	/* --------------------------------- navbar --------------------------------- */
+	header,
+	main {
+		padding: 8px;
+	}
+
+	nav img {
+		width: 28px;
+	}
+
+	.nav-title {
+		font-size: 22px;
+	}
+
+	.nav-link {
+		display: none;
+	}
+
+	.nav-hamburger {
+		display: block;
+	}
+}
