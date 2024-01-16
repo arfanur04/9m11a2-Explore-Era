@@ -31,6 +31,10 @@
 	position: absolute;
 }
 
+.center-align {
+	text-align: center;
+}
+
 .section-title {
 	color: #131318;
 	font-size: 40px;
@@ -247,6 +251,53 @@ nav a {
 	font-weight: 800;
 }
 
+/* -------------------------- why choose us section ------------------------- */
+.us-section {
+	margin-bottom: 100px;
+}
+
+.us-title {
+	margin-bottom: 24px;
+}
+
+.us-description {
+	margin-top: 0;
+	margin-bottom: 48px;
+	text-align: center;
+}
+
+.us-item-container {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	margin-top: 24px;
+}
+
+.us-item {
+	max-width: 573px;
+}
+
+.us-item-1 {
+	border-radius: 16px;
+	border: 1px solid rgba(251, 181, 99, 0.2);
+	background: rgba(251, 181, 99, 0.05);
+	padding: 32px;
+}
+
+.us-item-2 {
+	border-radius: 16px;
+	border: 1px solid rgba(41, 206, 246, 0.2);
+	background: rgba(41, 206, 246, 0.05);
+	padding: 32px;
+}
+
+.us-item-3 {
+	border-radius: 16px;
+	border: 1px solid rgba(233, 68, 68, 0.2);
+	background: rgba(233, 68, 68, 0.05);
+	padding: 32px;
+}
+
 /* ----------------------------- mobile display ----------------------------- */
 @media screen and (max-width: 600px) {
 	/* ------------------------------ common style ------------------------------ */
@@ -315,6 +366,11 @@ nav a {
 	.destination-first-line,
 	.destination-sec-line,
 	.destination-third-line {
+		flex-direction: column;
+	}
+
+	/* -------------------------- why choose us section ------------------------- */
+	.us-item-container {
 		flex-direction: column;
 	}
 }
