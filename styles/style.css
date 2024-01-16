@@ -298,6 +298,86 @@ nav a {
 	padding: 32px;
 }
 
+/* --------------------------- newsletter section --------------------------- */
+.newsletter-section {
+	display: grid;
+	grid-template-columns: auto 672px;
+	gap: 24px;
+	margin-bottom: 100px;
+}
+
+.newsletter-title {
+	color: #131318;
+	font-size: 24px;
+	font-weight: 800;
+	margin-bottom: 0;
+}
+
+.newsletter-description {
+	color: #5a5a5d;
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.newsletter-content {
+	border-radius: 16px;
+	border: 1px solid #ff5400;
+	padding: 32px;
+}
+
+.newsletter-content,
+.newsletter-input-group {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	justify-content: center;
+}
+
+.newsletter-content input {
+	border: none;
+	color: rgba(19, 19, 24, 0.3);
+	font-size: 16px;
+	font-weight: 400;
+	padding: 16px;
+	border-radius: 8px;
+	background: rgba(19, 19, 24, 0.05);
+}
+
+.newsletter-img img {
+	width: 100%;
+}
+
+.newsletter-absolute-box {
+	position: absolute;
+	right: 2%;
+	bottom: 15%;
+
+	width: 324px;
+	height: 120px;
+	transform: rotate(-19.628deg);
+
+	border-radius: 16px;
+	background: #ff5400;
+	color: white;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.newsletter-absolute-box h3 {
+	font-size: 24px;
+	margin: 0;
+}
+
+.newsletter-absolute-box h4 {
+	font-size: 32px;
+	margin: 0;
+}
+
 /* ----------------------------- mobile display ----------------------------- */
 @media screen and (max-width: 600px) {
 	/* ------------------------------ common style ------------------------------ */
@@ -372,5 +452,25 @@ nav a {
 	/* -------------------------- why choose us section ------------------------- */
 	.us-item-container {
 		flex-direction: column;
+	}
+
+	/* --------------------------- newsletter section --------------------------- */
+	.newsletter-section {
+		grid-template-columns: 1fr;
+	}
+
+	.newsletter-absolute-box {
+		width: 214.023px;
+		height: 79.268px;
+	}
+
+	.newsletter-absolute-box h3 {
+		font-size: 16px;
+		margin: 0;
+	}
+
+	.newsletter-absolute-box h4 {
+		font-size: 24px;
+		margin: 0;
 	}
 }
