@@ -27,6 +27,18 @@
 	position: relative;
 }
 
+.section-title {
+	color: #131318;
+	font-size: 40px;
+	font-weight: 800;
+}
+
+.section-description {
+	color: rgba(19, 19, 24, 0.7);
+	font-size: 16px;
+	font-weight: 400;
+}
+
 /* --------------------------------- navbar --------------------------------- */
 nav {
 	display: flex;
@@ -150,8 +162,43 @@ nav a {
 	width: 174px;
 }
 
+/* ------------------------ our popular tours section ----------------------- */
+.popular-section {
+	display: flex;
+	gap: 50px;
+	margin-bottom: 100px;
+}
+
+.popular-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1;
+}
+
+.popular-content li {
+	margin-bottom: 16px;
+}
+
+.popular-img {
+	flex: 1;
+}
+
+.popular-img img {
+	width: 100%;
+}
+
 /* ----------------------------- mobile display ----------------------------- */
 @media screen and (max-width: 600px) {
+	/* ------------------------------ common style ------------------------------ */
+	.section-title {
+		font-size: 20px;
+	}
+
+	.section-description {
+		font-size: 14px;
+	}
+
 	/* --------------------------------- navbar --------------------------------- */
 	header,
 	main {
@@ -198,5 +245,10 @@ nav a {
 
 	.banner-btn {
 		width: 100%;
+	}
+
+	/* ------------------------ our popular tours section ----------------------- */
+	.popular-section {
+		flex-direction: column;
 	}
 }
