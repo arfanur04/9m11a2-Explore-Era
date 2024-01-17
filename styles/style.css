@@ -421,6 +421,46 @@ footer {
 	margin-top: 50px;
 }
 
+/* ---------------------- 20% discount _ bonus section ---------------------- */
+.twenty-section {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	margin-bottom: 100px;
+	gap: 32px;
+}
+
+.twenty-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.twenty-item-content img {
+	max-width: 300px;
+	border-radius: 16px;
+}
+
+.twenty-date-big {
+	font-size: 48px;
+}
+
+.twenty-date,
+.twenty-title,
+.twenty-description {
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
+.twenty-item-content {
+	display: flex;
+	gap: 24px;
+}
+
+.twenty-img img {
+	width: 100%;
+	border-radius: 16px;
+}
+
 /* ----------------------------- mobile display ----------------------------- */
 @media screen and (max-width: 600px) {
 	/* ------------------------------ common style ------------------------------ */
@@ -529,5 +569,20 @@ footer {
 
 	.footer-copyright {
 		margin-top: 24px;
+	}
+
+	/* ---------------------- 20% discount _ bonus section ---------------------- */
+	.twenty-section {
+		grid-template-columns: 1fr;
+	}
+
+	.twenty-item-content img {
+		max-width: fit-content;
+		width: 100%;
+	}
+
+	.twenty-item-content {
+		flex-direction: column;
+		align-items: center;
 	}
 }
